@@ -8,7 +8,10 @@ private:
     bool forkliftCertificate;
 
 public:
-    Employee(std::string name, bool forkliftCertificate);
+    Employee(const std::string name, bool forkliftCertificate):
+        name(name),
+        forkliftCertificate(forkliftCertificate)
+        {}
 
     std::string getName();
     bool getBusy();
