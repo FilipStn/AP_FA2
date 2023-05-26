@@ -2,13 +2,14 @@
 #include <iostream>
 #include "Shelf.hpp"
 #include "Employee.hpp"
+#include <vector>
 
 
 class Warehouse {
 public:
     std::vector<Employee> Employees;
-    std::vector<Shelf> Shelves;
-    Warehouse();
+    std::vector<Shelf> shelves;
+    Warehouse(){};
 
     void addEmployee(Employee employee);
     void addShelf(Shelf shelf);

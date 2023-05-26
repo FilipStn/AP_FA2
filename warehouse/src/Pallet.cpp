@@ -1,7 +1,7 @@
-// #pragma once
 #include <iostream>
 #include "include/Pallet.hpp"
 #include "include/IContainer.hpp"
+
 
 Pallet::Pallet(std::string name, int capacity, int count) {
    itemName = name;
