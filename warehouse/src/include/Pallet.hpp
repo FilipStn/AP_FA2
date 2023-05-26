@@ -13,7 +13,7 @@ public:
     Pallet();
 
     std::string getitemName();
-    int getitemCount();
+    int getItemCount();
     int getRemainingSpace();
     bool reallocateEmptyPallet(std::string itemName, int itemCapacity);
     bool takeOne();

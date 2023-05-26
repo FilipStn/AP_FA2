@@ -1,6 +1,10 @@
 #include <iostream>
 #include "include/Warehouse.hpp"
 
+Warehouse::Warehouse(){
+    this -> Employees = {};
+    this -> shelves = {};
+}
 
 void Warehouse::addEmployee(Employee employee){
    Employees.push_back(employee);
@@ -33,7 +37,7 @@ bool Warehouse::rearrangeShelf(Shelf& Shelf){
         {flag = false;
         for (int i = 0; i < Shelf.pallets.size() - 1; i++)
         {
-            if (Shelf.pallets[i].getitemCount() > Shelf.pallets[i + 1].getitemCount())
+            if (Shelf.pallets[i].getItemCount() > Shelf.pallets[i + 1].getItemCount())
             {
                 Shelf.swapPallet(i, i + 1);
                 flag = true;
@@ -57,7 +61,7 @@ bool Warehouse::pickItems(std::string name, int count){
         {   
             if (pallet.getitemName() == name)
             {
-                item_count += pallet.getitemCount();
+                item_count += pallet.getItemCount();
             }
         }
     }
@@ -70,7 +74,7 @@ bool Warehouse::pickItems(std::string name, int count){
             {   
                 if (pallet.getitemName() == name && !pallet.isEmpty())
                 {
-                    while (pallet.getitemCount() > 0)
+                    while (pallet.getItemCount() > 0)
                     {
                         pallet.takeOne();
                     }    

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Pallet.cpp"
+#include "include/Pallet.hpp"
 #include "include/Shelf.hpp"
 #include "include/IContainer.hpp"
 

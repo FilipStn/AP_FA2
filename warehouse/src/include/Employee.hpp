@@ -3,17 +3,17 @@
 
 class Employee {
 private:
-    const std::string name;
+    std::string name;
     bool busy;
     bool forkliftCertificate;
 
 public:
     Employee(){}
-    Employee(const std::string name, bool forkliftCertificate):
-        name(name),
-        forkliftCertificate(forkliftCertificate),
-        busy(false)
-        {}
+    Employee(std::string name, bool forkliftCertificate);
+        // name(name),
+        // busy(false),
+        // forkliftCertificate(forkliftCertificate)
+        // {}
 
     std::string getName();
     bool getBusy();

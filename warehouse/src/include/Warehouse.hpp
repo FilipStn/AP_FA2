@@ -9,7 +9,7 @@ class Warehouse {
 public:
     std::vector<Employee> Employees;
     std::vector<Shelf> shelves;
-    Warehouse(){};
+    Warehouse();
 
     void addEmployee(Employee employee);
     void addShelf(Shelf shelf);
