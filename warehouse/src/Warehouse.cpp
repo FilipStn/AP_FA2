@@ -13,10 +13,12 @@ void Warehouse::addEmployee(Employee employee){
 
 }
 
+
 void Warehouse::addShelf(Shelf shelf){
     // add the newest shelf to the end of the vector
     shelves.push_back(shelf);
 }
+
 
 bool Warehouse::rearrangeShelf(Shelf& Shelf){
     // this function rearranges the shelf

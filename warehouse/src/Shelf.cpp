@@ -6,7 +6,8 @@
 
  
 // create shelf
-Shelf::Shelf(){};
+Shelf::Shelf(){
+};
 
 bool Shelf::swapPallet(int slot, int slot2){
     // placeholder variable for one slot
